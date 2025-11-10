@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits depuis API</title>
+  <link rel="stylesheet" href="rea.css" />
+</head>
+<body>
+  <h1>🛍️ Liste des Produits</h1>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="🔍 Rechercher un produit..." />
+    <select id="categoryFilter">
+      <option value="">Toutes les catégories</option>
+    </select>
+    <input type="number" id="minPrice" placeholder="Prix min (€)" min="0" />
+    <input type="number" id="maxPrice" placeholder="Prix max (€)" min="0" />
+  </div>
+
+  <div id="productsContainer" class="products"></div>
+
+  <script src="rea.js"></script>
+</body>
+</html>
